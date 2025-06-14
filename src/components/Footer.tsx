@@ -1,5 +1,6 @@
 
 import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,12 +23,12 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex space-x-6 text-sm text-gray-600">
-            <a href="#" className="hover:text-syno-green-600 transition-colors">
+            <Link to="/privacy-policy" className="hover:text-syno-green-600 transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-syno-green-600 transition-colors">
+            </Link>
+            <Link to="/terms-of-service" className="hover:text-syno-green-600 transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
