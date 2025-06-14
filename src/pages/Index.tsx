@@ -51,7 +51,7 @@ const Index = () => {
       <section className="hero-gradient py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fade-in">
+            <div className="space-y-8 animate-fade-in text-center lg:text-left">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   <span className="gradient-text">Syno Gold</span>: The Pure Essence of Spirulina
@@ -60,12 +60,14 @@ const Index = () => {
                   Discover the natural path to vitality and wellness with nature's most powerful superfood.
                 </p>
               </div>
-              <Link to="/benefits">
-                <Button size="lg" className="bg-syno-green-600 hover:bg-syno-green-700 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 hover:shadow-lg group">
-                  Discover the Benefits
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
+              <div className="flex justify-center lg:justify-start">
+                <Link to="/benefits">
+                  <Button size="lg" className="bg-syno-green-600 hover:bg-syno-green-700 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 hover:shadow-lg group">
+                    Discover the Benefits
+                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+              </div>
             </div>
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
