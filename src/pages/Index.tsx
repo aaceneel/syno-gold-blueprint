@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -51,7 +50,7 @@ const Index = () => {
       <section className="hero-gradient py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fade-in text-center lg:text-left">
+            <div className="space-y-10 animate-fade-in text-center lg:text-left">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   <span className="gradient-text">Syno Gold</span>: The Pure Essence of Spirulina
@@ -88,7 +87,7 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
                   What is Spirulina?
@@ -116,12 +115,14 @@ const Index = () => {
                 </div>
               </div>
 
-              <Link to="/what-is-spirulina">
-                <Button variant="outline" className="border-syno-green-600 text-syno-green-600 hover:bg-syno-green-50">
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
+              <div className="pt-4">
+                <Link to="/what-is-spirulina">
+                  <Button variant="outline" className="border-syno-green-600 text-syno-green-600 hover:bg-syno-green-50">
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
 
             <div className="flex justify-center">
@@ -190,7 +191,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
                   The <span className="gradient-text">Syno Gold</span> Standard
@@ -209,12 +210,14 @@ const Index = () => {
                 ))}
               </ul>
 
-              <Link to="/our-quality">
-                <Button size="lg" variant="outline" className="border-syno-gold-400 text-syno-gold-600 hover:bg-syno-gold-50 group">
-                  Explore Our Quality
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
+              <div className="pt-4">
+                <Link to="/our-quality">
+                  <Button size="lg" variant="outline" className="border-syno-gold-400 text-syno-gold-600 hover:bg-syno-gold-50 group">
+                    Explore Our Quality
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
