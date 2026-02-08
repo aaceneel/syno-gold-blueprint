@@ -1,0 +1,79 @@
+{
+  "name": "nextjs-saas-starter",
+  "label": "Next.js SaaS Starter",
+  "description": "Modern SaaS boilerplate with authentication, payments, and dashboard",
+  "longDescription": "A complete Next.js SaaS starter template with user authentication, Stripe payments, admin dashboard, and responsive design. Built with TypeScript and Tailwind CSS for rapid development.",
+  "category": "saas",
+  "tags": ["nextjs", "typescript", "saas", "stripe", "auth", "tailwind"],
+  "icon": "i-ph:rocket-launch",
+  "preview_image": "preview.png",
+  "author": "Rax.diy Team",
+  "license": "MIT",
+  "demo_url": "https://demo.example.com",
+  "features": [
+    "User authentication with NextAuth.js",
+    "Stripe subscription management",
+    "Admin dashboard with analytics",
+    "Responsive design with Tailwind CSS",
+    "TypeScript for type safety",
+    "Database integration with Prisma"
+  ],
+  "tech_stack": [
+    "Next.js 14",
+    "TypeScript",
+    "Stripe",
+    "NextAuth.js",
+    "Prisma",
+    "Tailwind CSS"
+  ],
+  "env_vars": [
+    {
+      "key": "DATABASE_URL",
+      "label": "Database URL",
+      "description": "PostgreSQL connection string for Prisma",
+      "required": true,
+      "type": "password",
+      "placeholder": "postgresql://user:password@localhost:5432/mydb"
+    },
+    {
+      "key": "NEXTAUTH_SECRET",
+      "label": "NextAuth Secret",
+      "description": "Secret for NextAuth.js session encryption",
+      "required": true,
+      "type": "password",
+      "placeholder": "Generate with: openssl rand -base64 32"
+    },
+    {
+      "key": "NEXTAUTH_URL",
+      "label": "NextAuth URL",
+      "description": "Your application URL",
+      "required": true,
+      "type": "url",
+      "placeholder": "http://localhost:3000"
+    },
+    {
+      "key": "STRIPE_SECRET_KEY",
+      "label": "Stripe Secret Key",
+      "description": "Stripe secret key from dashboard",
+      "required": true,
+      "type": "password",
+      "placeholder": "sk_test_..."
+    },
+    {
+      "key": "STRIPE_PUBLISHABLE_KEY",
+      "label": "Stripe Publishable Key",
+      "description": "Stripe publishable key",
+      "required": true,
+      "type": "text",
+      "placeholder": "pk_test_..."
+    },
+    {
+      "key": "STRIPE_WEBHOOK_SECRET",
+      "label": "Stripe Webhook Secret",
+      "description": "Webhook secret for Stripe events",
+      "required": false,
+      "type": "password",
+      "placeholder": "whsec_..."
+    }
+  ]
+}
